@@ -80,10 +80,10 @@ def parse_file( fname, edges, polygons, csystems, screen, color ):
             stack = []
             for i in range(len(csystems[-1])):
                 row = []
-                for j in range(len(csystems[-1][0]))
+                for j in range(len(csystems[-1][0])):
                     row.append(csystems[-1][i][j])
                 stack.append(row)
-
+	    csystems.append(stack)
 
         elif line == 'pop':
             csystems.pop()
